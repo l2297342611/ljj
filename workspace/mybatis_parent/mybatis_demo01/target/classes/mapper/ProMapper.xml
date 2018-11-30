@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.dao.mapper.ProductMapper">
+
+    <resultMap id="proResult" type="com.neusoft.entity.ProductEntity">
+        <id property="goodsno" column="goodsno" jdbcType="INTEGER"></id>
+        <result property="goodsname" column="goodsname" jdbcType="VARCHAR"></result>
+        <result property="price" column="price" jdbcType="DECIMAL"></result>
+        <result property="goodsunit" column="goodsunit" jdbcType="VARCHAR"></result>
+        <result property="goodsexp" column="goodsexp" jdbcType="VARCHAR"></result>
+        <result property="goodsex" column="goodsex" jdbcType="VARCHAR"></result>
+        <result property="supplierno" column="supplierno" jdbcType="INTEGER"></result>
+        <result property="image" column="image" jdbcType="VARCHAR"></result>
+    </resultMap>
+    <select id="queryAllPro" resultMap="proResult">
+        select goodsno,goodsname,price,goodsunit,goodsexp,goodsex,supplierno,image from product
+    </select>
+    <insert id="insertPro" parameterType="com.neusoft.entity.ProductEntity">
+        INSERT INTO product(goodsname,price,goodsunit,goodsexp,goodsex,supplierno,image)
+        VALUES(#{goodsname},#{price},#{goodsunit},#{goodsexp},#{goodsex},#{supplierno},#{image})
+    </insert>
+
+    <delete id="deletePro" parameterType="int">
+        delete from product where goodsno=#{goodsno}
+    </delete>
+
+    <update id="updatePro" parameterType="com.neusoft.entity.ProductEntity">
+        update product set goodsname=#{goodsname},price=#{price},goodsunit=#{goodsunit},
+        goodsexp=#{goodsexp},goodsex=#{goodsex},supplierno=#{supplierno},image=#{image}
+        where goodsno=#{goodsno}
+    </update>
+</mapper>

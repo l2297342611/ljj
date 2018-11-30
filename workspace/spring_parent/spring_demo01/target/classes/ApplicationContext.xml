@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="date" class="java.util.Date">
+
+    </bean>
+    <bean id="product" class="com.neusoft.lj.dao.impl.ProductImpl">
+        <constructor-arg index="0" type="java.lang.String" value="sdads"/>
+        <constructor-arg index="1" type="double" value="12"/>
+        <constructor-arg index="2">
+            <ref bean="date"/>
+        </constructor-arg>
+    </bean>
+    <bean id="ProductDAO" class="com.neusoft.lj.dao.impl.ProductImpl">
+        <property name="goodsName" value="小森林"/>
+        <property name="price">
+            <value type="double">21</value>
+        </property>
+        <property name="today" ref="date"/>
+    </bean>
+</beans>

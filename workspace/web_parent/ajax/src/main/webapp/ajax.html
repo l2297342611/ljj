@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn01').click(function () {
+                $(this).load('ajax.do',{uname:'a'},function (response,status,xhr) {
+                    alert(response);
+                    if(status == 'success'){
+                        $('div').text(xhr.responseText);
+                        $(this).text("load");
+                        alert(xhr.status);
+                    }
+                })
+
+            })
+            $('#btn02').click(function () {
+                $.get('get.do',{uname:'sdf',pwd:'45645'},function (response,status,xhr) {
+                    alert(response);
+                    if(status == 'success'){
+                        $('div').text(response.pid);
+                        alert(xhr.status);
+                    }
+                })
+            })
+            $('#btn03').click(function () {
+                $.post('ajax.do',{uname:'c'},function (response,status,xhr) {
+                    alert(response);
+                    if(status == 'success'){
+                        $('div').text(xhr.responseText);
+                        alert(xhr.status);
+                    }
+                })
+            })
+            $("#btn04").click(function () {
+                $.ajax({
+                    type:'post',
+                    url:'ajax.do',
+                    data:{
+                        uname:'d'
+                    },
+                    success:function (response,status,xhr) {
+                        alert(response);
+                        if(status == 'success'){
+                            $('div').text(xhr.responseText);
+                            alert(xhr.status);
+                        }
+                    }
+                })
+            })
+        })
+
+    </script>
+    <style>
+        div{
+            border: solid 1px red;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+      <div></div>
+      <button id="btn01">load</button>
+      <button id="btn02">get</button>
+      <button id="btn03">post</button>
+      <button id="btn04">ajax</button>
+</body>
+</html>

@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:55 +0800] "GET / HTTP/1.1" 200 182 http-bio-8899-exec-1 207
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:57 +0800] "GET /register/register.jsp HTTP/1.1" 200 3168 http-bio-8899-exec-7 1077
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:57 +0800] "GET /register/css/register.css HTTP/1.1" 304 - http-bio-8899-exec-8 43
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:57 +0800] "GET /register/js/register.js HTTP/1.1" 200 4026 http-bio-8899-exec-2 44
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:58 +0800] "GET /register/img/01.png HTTP/1.1" 304 - http-bio-8899-exec-10 63
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:58 +0800] "GET /register/img/02.png HTTP/1.1" 304 - http-bio-8899-exec-3 67
+0:0:0:0:0:0:0:1 - - [24/Oct/2018:14:19:58 +0800] "GET /checkcode.do HTTP/1.1" 200 1136 http-bio-8899-exec-9 483
+10.25.200.84 - - [24/Oct/2018:16:49:52 +0800] "GET /active.do?codes=10761109-1c6d-4f7e-a770-555489b1b402&account=147 HTTP/1.1" 200 26 http-bio-8899-exec-2 4546
+10.25.200.84 - - [24/Oct/2018:16:49:54 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8899-exec-2 31

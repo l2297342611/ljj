@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:15 +0800] "GET /SSM HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:15 +0800] "GET /SSM/ HTTP/1.1" 200 97 http-bio-8080-exec-3 226
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:23 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:25 +0800] "GET /SSM/pro/queryPro.do HTTP/1.1" 200 4492 http-bio-8080-exec-5 750
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:28 +0800] "GET /SSM/view/insert.jsp HTTP/1.1" 200 781 http-bio-8080-exec-7 45
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:34 +0800] "POST /SSM/pro/insertPro.do HTTP/1.1" 302 - http-bio-8080-exec-8 48
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:34 +0800] "GET /SSM/pro/queryPro.do HTTP/1.1" 200 4899 http-bio-8080-exec-9 10
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:37 +0800] "GET /SSM/pro/deletePro.do?goodsno=37 HTTP/1.1" 302 - http-bio-8080-exec-10 16
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:37 +0800] "GET /SSM/pro/queryPro.do HTTP/1.1" 200 4492 http-bio-8080-exec-10 23
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:39 +0800] "GET /SSM/pro/queryByGoodsno.do?goodsno=36 HTTP/1.1" 200 786 http-bio-8080-exec-10 34
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:43 +0800] "POST /SSM/pro/updatePro.do HTTP/1.1" 302 - http-bio-8080-exec-10 15
+0:0:0:0:0:0:0:1 - - [30/Nov/2018:08:33:43 +0800] "GET /SSM/pro/queryPro.do HTTP/1.1" 200 4494 http-bio-8080-exec-10 11

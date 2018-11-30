@@ -1,0 +1,4 @@
+com\neusoft\dao\mapper\ProductEntityMapper.class
+com\neusoft\entity\ProductEntity.class
+com\neusoft\service\ProductService.class
+com\neusoft\controller\ProductHandle.class
